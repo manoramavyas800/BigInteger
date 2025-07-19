@@ -23,3 +23,23 @@ public class Recursion {
         System.out.println(n);
     }
 }
+//print factorial.
+
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class Recursion {
+   static BigInteger factorial(int n) {
+       BigInteger a = new BigInteger("1");
+       for (int i = 1; i <= n; i++) {
+           a = a.multiply(BigInteger.valueOf(i));
+       }
+       return a;
+   }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t=sc.nextInt();
+        BigInteger a =  factorial(t);
+        System.out.println(a);
+    }
+}
